@@ -1,0 +1,44 @@
+@use 'bases/variables' as v; 
+@use 'bases/mixins' as m;
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 2rem;
+    position: relative;
+    @include m.tablet{
+        justify-content: start;
+    }
+    &__content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+    &__logo{
+        margin: 0;
+        font-size: 4.2rem;
+    }
+
+    &__login{
+        // color: v.$primario;
+        @include m.boton(v.$primario, transparent);
+        padding-inline: 2rem;
+        padding-block: 1rem;
+        @include m.tablet{
+            position: absolute;
+            right: 0;
+            padding: 1rem 4rem;
+        }
+        @include m.desktop{
+            padding: 1.2rem 6rem;
+        }
+
+        &:hover{
+            color: v.$blanco;
+            background-color: v.$primario;
+        }
+    }
+
+}

@@ -1,0 +1,45 @@
+@use 'bases/variables' as v; 
+@use 'bases/mixins' as m;
+
+.productos{
+    padding-block: 4rem;
+}
+
+.seccion{
+    padding-block: 3rem;
+    &__header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 1.6rem;
+    }
+    &__titulo{
+        margin-bottom: 0;
+    }
+    &__link{
+        color: v.$primario;
+        font-weight: 700
+    }
+    &__productos{
+        @include m.grid(2, 2rem);
+
+        @include m.tablet{
+            @include m.grid(3, 2rem);
+        }
+    }
+    &__img{
+        width: 100%;
+    }
+    &__nombre{
+        font-size: 1.5rem;
+        margin: .8rem 0;
+    }
+    &__precio{
+        margin: 0 0 .8rem 0;
+        font-weight: 700;
+    }
+    &__linkProducto{
+        color: v.$primario;
+        font-weight: 700;
+    }
+}

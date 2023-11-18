@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura-Geek</title>
+    <link rel="shortcut icon" href="build/img/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="build/css/normalize.css">
+    <link rel="stylesheet" href="build/css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header contenedor">
+        <div class="header__content">
+            <a href="index.html">
+                <h1 class="header__logo">Piñata</h1>
+            </a>
+        </div>
+        <a class="header__login" href="#">Contacto</a>
+    </header>
+
+    <section class="hero">
+        <div class="contenedor">
+            <div class="hero__content">
+                <h1 class="hero__titulo">Diciembre Promocional</h1>
+                <p class="hero__texto">Descubre la magia en cada detalle, celebra con autenticidad con nuestras piñatas.</p>
+                <a href="#productos" class="hero__enlace">Ver Productos</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="bloques">
+        <div class="bloque">
+            <div class="bloque__contenido">
+                <h2 class="bloque__heading">Nuestra experiencia</h2>
+                <p class="bloque__texto">Nos respalda, nuestro enfoque único y artesanal ha deleitado a clientes en mis 5 años de experiencia</p>
+            </div>
+        </div>
+        <div class="bloque"></div>
+        <div class="bloque">
+            <div class="bloque__contenido">
+                <h2 class="bloque__heading">Sobre Nosotros</h2>
+                <p class="bloque__texto">Con una amplia gama de diseños y temas, creamos piñatas con innovadores diseños para estas fiestas decembrinas</p>
+            </div>
+        </div>
+        <div class="bloque"></div>
+    </section>
+
+    <main id="productos" class="productos contenedor">
+        
+        <section class="seccion">
+            <header class="seccion__header">
+                <h2 class="seccion__titulo">Nuestras Piñatas</h2>
+            </header>
+
+            <div class="seccion__productos">
+                <div class="seccion__producto">
+                    <img class="seccion__img" src="build/img/sections/producto_1.jpeg" alt="war1">
+                    <p class="seccion__nombre">Producto XYZ</p>
+                    <p class="seccion__precio">$60</p>
+                    <a class="seccion__linkProducto" href="#">Reservar Producto</a>
+
+                </div>
+                <div class="seccion__producto">
+                    <img class="seccion__img" src="build/img/sections/producto_2.jpeg" alt="war2">
+                    <p class="seccion__nombre">Producto XYZ</p>
+                    <p class="seccion__precio">$60</p>
+                    <a class="seccion__linkProducto" href="#">Reservar Producto</a>
+
+                </div>
+                <div class="seccion__producto">
+                    <img class="seccion__img" src="build/img/sections/producto_3.jpeg" alt="war3">
+                    <p class="seccion__nombre">Producto XYZ</p>
+                    <p class="seccion__precio">$60</p>
+                    <a class="seccion__linkProducto" href="#">Reservar Producto</a>
+
+                </div>
+                <div class="seccion__producto">
+                    <img class="seccion__img" src="build/img/sections/producto_4.jpeg" alt="war4">
+                    <p class="seccion__nombre">Producto XYZ</p>
+                    <p class="seccion__precio">$60</p>
+                    <a class="seccion__linkProducto" href="#">Reservar Producto</a>
+
+                </div>
+                <div class="seccion__producto">
+                    <img class="seccion__img" src="build/img/sections/producto_5.jpeg" alt="war5">
+                    <p class="seccion__nombre">Producto XYZ</p>
+                    <p class="seccion__precio">$60</p>
+                    <a class="seccion__linkProducto" href="#">Reservar Producto</a>
+
+                </div>
+                <div class="seccion__producto">
+                    <img class="seccion__img" src="build/img/sections/producto_6.jpeg" alt="war">
+                    <p class="seccion__nombre">Producto XYZ</p>
+                    <p class="seccion__precio">$60</p>
+                    <a class="seccion__linkProducto" href="#">Reservar Producto</a>
+
+                </div>
+                <div class="seccion__producto">
+                    <img class="seccion__img" src="build/img/sections/producto_7.jpeg" alt="war">
+                    <p class="seccion__nombre">Producto XYZ</p>
+                    <p class="seccion__precio">$60</p>
+                    <a class="seccion__linkProducto" href="#">Reservar Producto</a>
+
+                </div>
+                <div class="seccion__producto">
+                    <img class="seccion__img" src="build/img/sections/producto_8.jpeg" alt="war">
+                    <p class="seccion__nombre">Producto XYZ</p>
+                    <p class="seccion__precio">$60</p>
+                    <a class="seccion__linkProducto" href="#">Reservar Producto</a>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__contenido contenedor">
+            <div class="footer__logo">
+                <a href="index.html">
+                    <h1 class="footer__h1">Piñata</h1>
+                </a>
+            </div>
+
+            <form class="formulario">
+                <h3 class="formulario__titulo">Reservar</h3>
+                
+                <div class="formulario__campo">
+                    <label class="formulario__label" for="nombre">Nombre</label>
+                    <input class="formulario__input" type="text" id="nombre" placeholder="Escribe tu Nombre">
+                </div>
+                <div class="formulario__campo">
+                    <select class="formulario__input" name="" id="select">
+                        <option value="" disabled selected>Selecciona un producto</option>
+                        <option value="producto_1">producto 1</option>
+                        <option value="producto_2">producto 2</option>
+                        <option value="producto_3">producto 3</option>
+                        <option value="producto_4">producto 4</option>
+                        <option value="producto_5">producto 5</option>
+                        <option value="producto_6">producto 6</option>
+                        <option value="producto_7">producto 7</option>
+                        <option value="producto_8">producto 8</option>
+                    </select>
+                </div>
+
+                
+                <textarea class="formulario__textArea" name="comentarios" id="comentarios" cols="30" rows="10" placeholder="Escribe un mensaje"></textarea>
+
+
+                <input class="formulario__submit" type="submit" value="Enviar">
+            </form>
+        </div>
+    </footer>
+
+    <div class="copyright contenedor">
+        <p class="copyright__text">Desarrollado por Sebastian Hdz &copy; <span class="copyright__span">2023</span></p>
+    </div>
+</body>
+</html>

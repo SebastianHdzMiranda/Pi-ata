@@ -1,0 +1,15 @@
+@use 'bases/variables' as v; 
+@use 'bases/mixins' as m;
+
+.copyright{
+    text-align: center;
+    padding-block: 2rem;
+    &__text{
+        font-size: 1.6rem;
+        line-height: 1.5;
+        margin: 0;
+    }
+    &__span{
+        display: block;
+    }
+}

@@ -1,0 +1,31 @@
+@use 'bases/variables' as v; 
+@use 'bases/mixins' as m;
+
+.footer{
+    background-image: url(../img/bloque_2.jpg);
+    background-image: linear-gradient(to bottom, transparentize( v.$negro, 1 ) 0%, transparentize(v.$negro, .6%) 100%), url(../img/bloque_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-block: 6rem;
+    &__contenido{
+        display: grid;
+        
+        @include m.tablet{
+            grid-template-columns: 1fr 2fr;
+        }
+    }
+    &__logo{
+        h1 {
+            color: v.$blanco;
+            display: inline-block;
+        }
+    }
+    &__img{
+        margin: 0 auto;
+        @include m.tablet{
+            margin: unset;
+        }
+    }
+}
